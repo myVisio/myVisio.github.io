@@ -5,10 +5,21 @@
   "repository": "https://github.com/myVisio/myVisio.github.io.git",
   "author": "myVisio <gjansdud0131@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b main"
+  },
   "dependencies": {
+    "@babel/eslint-parser": "^7.14.3",
     "@wkocjan/gatsby-theme-intro": "^2.0.1",
+    "babel-eslint": "^10.1.0",
     "gatsby": "^3.5.0",
+    "graphql": "^15.5.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "sharp": "^0.28.2",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
